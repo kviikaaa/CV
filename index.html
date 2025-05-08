@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <title>Viktoriia Kotsur - CV</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* internal style as example */
-        p.highlight {
-            background-color: #e0f7fa;
-        }
-    </style>
 </head>
 <body>
+    <button onclick="toggleTheme()" id="theme-btn">Toggle Theme</button>
+
     <div class="container">
         <div class="left-column">
             <h1 id="main-title">Viktoriia Kotsur</h1>
@@ -22,10 +18,7 @@
         <div class="right-column">
             <h3 class="section-title">About me</h3>
             <p class="highlight">
-                I am a motivated person with a desire to work in IT. I am also a good and communicative leader 
-                because of the successful defense of seven projects in different subjects in the pre-university 
-                course and at the university in a team-lead position. Also, I am interested in sports and passionate 
-                about making and editing creative videos. Studied C, C#, C++, Java, JS, HTML&CSS and MySQL.
+                I am a motivated person with a desire to work in IT...
             </p>
 
             <h3 class="section-title">Expertise Skill</h3>
@@ -39,30 +32,50 @@
 
             <h3 class="section-title">Education</h3>
             <ul>
-                <li>Sep 2020 – May 2022: Pre-university Course (Java, Python, HTML&CSS)</li>
-                <li>Sep 2022 – Present: Lviv Polytechnic National University, Cybersecurity</li>
-                <li>Sep 2024 – Present: Python Developer Course (Python, SQL, Django, HTML&CSS)</li>
+                <li>Sep 2020 – May 2022: Pre-university Course</li>
+                <li>Sep 2022 – Present: Lviv Polytechnic</li>
+                <li>Sep 2024 – Present: Python Developer Course</li>
             </ul>
 
             <h3 class="section-title">Work Experience</h3>
             <ul>
-                <li>
-                    <strong>Programming teacher</strong> – IT-Step (Sep 2022 – Jan 2023)
-                    <br>HTML&CSS, WordPress, Python, Micro:Bit, MitApp Inventor, Robotics
-                </li>
-                <li>
-                    <strong>QA Specialist</strong> – USEF (Apr 2024 – Present)
-                    <br>Conducting and monitoring broadcasts, communication with other teams
-                </li>
+                <li><strong>Programming teacher</strong> – IT-Step</li>
+                <li><strong>QA Specialist</strong> – USEF</li>
             </ul>
 
             <h3 class="section-title">Contact Me</h3>
             <ul>
                 <li><a href="tel:+380980738079">Phone: +38(098) 07 380 79</a></li>
-                <li><a href="mailto:vikakotsur2707@gmail.com">Email: vikakotsur2707@gmail.com</a></li>
+                <li><a href="mailto:vikakotsur2707@gmail.com">Email</a></li>
                 <li>Location: Lviv, Ukraine</li>
             </ul>
         </div>
     </div>
+
+    <div id="comments">
+        <h3 class="section-title">Comments from Employers</h3>
+        <ul id="comments-list"></ul>
+    </div>
+
+    <footer id="footer-info">
+        <p><strong>OS:</strong> <span id="os"></span></p>
+        <p><strong>Browser:</strong> <span id="browser"></span></p>
+    </footer>
+
+    <!-- Модальне вікно -->
+    <div id="modal">
+        <div class="modal-content">
+            <h3>Contact Us</h3>
+            <form action="https://formspree.io/f/ВАШ_ЕНДПОЙНТ" method="POST">
+                <input type="text" name="name" placeholder="Name" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="tel" name="phone" placeholder="Phone"><br>
+                <textarea name="message" placeholder="Message" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
