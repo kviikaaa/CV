@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // 2. Запит до API
-fetch('https://jsonplaceholder.typicode.com/posts/3/comments') // заміни 3 на свій варіант
+fetch('https://jsonplaceholder.typicode.com/posts/12/comments') // заміни 3 на свій варіант
     .then(response => response.json())
     .then(data => {
         const list = document.getElementById("comments-list");
