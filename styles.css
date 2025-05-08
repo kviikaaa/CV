@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f7fa;
+    color: #2c3e50;
+}
+
+h1 {
+    color: #1a237e; 
+    font-size: 36px;
+    border-bottom: 3px solid #1a237e;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #455a64; 
+    margin-top: -10px;
+}
+
+h3 {
+    color: #1a237e;
+    margin-top: 30px;
+    border-left: 5px solid #1a237e;
+    padding-left: 10px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+strong {
+    color: #000;
+}
+
+p {
+    line-height: 1.6;
+    max-width: 800px;
+}
